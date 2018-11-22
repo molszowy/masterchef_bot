@@ -1,6 +1,6 @@
 from flask import Flask, request
 from webexteamssdk import WebexTeamsAPI, Webhook
-from .bot import handle_incoming_msg
+from bot import handle_incoming_msg
 
 flask_app = Flask(__name__)
 api = WebexTeamsAPI(access_token="NmRkNzE5ZWEtZWVkMC00NjI2LTg2NjktODAwMmRjMmUyM2UyMDM1NTI4MTgtZTRi")
@@ -26,7 +26,8 @@ def webex_teams_webhook_events():
         print("MESSAGE '{}'\n".format(message.text))
 
         response = handle_incoming_msg(message.text)
-        return api.messages.create(roomId=room.id, text=str(response))
+        msg = api.messages.create(roomId=room.id, text=str(response))
+        return 'Msg'
 
         me = api.people.me()
         if message.personId == me.id:

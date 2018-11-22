@@ -20,7 +20,4 @@ def handle_incoming_msg(text: str):
 
     return messages
 
-print(handle_incoming_msg('Hello!'))
-print(handle_incoming_msg('What are your opening hours ?'))
-
 
