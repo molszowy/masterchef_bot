@@ -32,4 +32,4 @@ def webex_teams_webhook_events():
             return 'Answer sent'
 
 if __name__ == '__main__':
-    flask_app.run(host='3.121.237.245', port=9900)
+    flask_app.run(host='0.0.0.0', port=9900)
