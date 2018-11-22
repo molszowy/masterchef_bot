@@ -1,0 +1,73 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you around"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you later"
+      },
+      {
+        "intent": "hours_intent",
+        "text": "How long are you open ?"
+      },
+      {
+        "intent": "hours_intent",
+        "text": "What are your opening hours ?"
+      },
+      {
+        "intent": "hours_intent",
+        "text": "Are you open now ?"
+      },
+      {
+        "intent": "hours_intent",
+        "text": "of course"
+      },
+      {
+        "intent": "hours_intent",
+        "text": "that sounds good"
+      },
+      {
+        "intent": "hours_intent",
+        "text": "correct"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
